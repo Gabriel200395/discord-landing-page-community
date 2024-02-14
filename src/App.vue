@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <section class="h-screen bg-[#5865F2] bg-[url('../src/assets/imgs/fundo.svg')] bg-cover">
+  <section class="h-screen bg-[url('../src/assets/imgs/background_img.svg')] bg-cover bg-bottom ">
     <nav class=" w-full flex items-center justify-between py-3 px-10">
-      <img src="../src/assets/imgs/logo.png" />
+      <img src="../src/assets/imgs/logo.svg" />
 
       <ul class="flex list-none space-x-10">
         <li class="text-white text-base">Download</li>
