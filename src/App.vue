@@ -38,16 +38,27 @@
   </section>
 
   <section class="px-10 mt-12 flex justify-center w-full">
-
-    <div class="flex">
-      <img src="../src/assets/imgs/create_invite.svg" alt="invite-img" class="pr-10">
+    <div class="flex max-w-6xl w-full justify-between px-10">
+      <img src="../src/assets/imgs/create_invite.svg" alt="invite-img" class="h-96">
       <div>
-        <h3 class="text-3xl max-w-48  text-[#23272A] font-medium mb-5">Create an invite-only place where you belong</h3>
+        <h3 class="text-3xl max-w-48 text-[#23272A] font-medium mb-5">Create an invite-only place where you belong</h3>
         <p class="max-w-60 text-base text-[#23272A]">Discord servers are organized into topic-based channels where you can
           collaborate, share, and just talk about your day without clogging up a group chat.</p>
       </div>
     </div>
+  </section>
 
+  <section class="px-10 mt-12 flex justify-center w-full">
+    <div class="bg-[#F6F6F6] max-w-6xl w-full flex  justify-between py-10 px-10 items-center">
+
+      <div>
+        <h3 class="text-3xl max-w-60 text-[#23272A] font-medium mb-5">Where hanging out is easy</h3>
+        <p class="max-w-60 text-base text-[#23272A]">Grab a seat in a voice channel when you’re free. Friends in your
+          server can see you’re around and instantly pop in to talk without having to call.</p>
+      </div>
+
+      <img src="../src/assets/imgs/voice_connected.svg" alt="voice-connected" class="h-96">
+    </div>
   </section>
 </template>
 
