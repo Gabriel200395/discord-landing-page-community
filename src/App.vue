@@ -1,6 +1,4 @@
-<script lang="ts" setup>
 
-</script>
 
 <template>
   <section class="h-screen bg-[url('../src/assets/imgs/background_img.svg')] bg-cover bg-bottom ">
@@ -16,11 +14,24 @@
         <li class="text-white text-base">Blog</li>
       </ul>
 
-      <button class="bg-white h-10 w-10 rounded">Text</button>
+      <Toggle v-model="toogle" v-bind:classes="{
+        container: 'inline-block rounded-full outline-none',
+        toggle: 'flex w-14 h-6 rounded-full relative cursor-pointer transition items-center box-content text-xs leading-none',
+        toggleOn: 'bg-[#000000] justify-start text-white',
+        toggleOff: 'bg-[#5865F2] justify-end text-gray-700',
+        toggleOnDisabled: 'bg-[#5865F2] justify-start text-gray-400 cursor-not-allowed',
+        toggleOffDisabled: 'bg-[#5865F2]   justify-end text-gray-400 cursor-not-allowed',
+        handle: 'inline-block bg-white w-6 h-6 top-0 rounded-full absolute transition-all',
+        handleOn: 'left-full transform -translate-x-full',
+        handleOff: 'left-0',
+        handleOnDisabled: 'bg-[#5865F2]  left-full transform -translate-x-full',
+        handleOffDisabled: 'bg-[#5865F2]  left-0',
+        label: 'text-center w-8 border-box whitespace-nowrap select-none',
+      }" />
     </nav>
 
 
-    <div class="text-center items-center flex w-full justify-center flex-col mt-20">
+    <div class="text-center items-center flex w-full justify-center flex-col mt-20 ring-none h-">
       <h2 class="text-white text-5xl uppercase mb-10">Imagine a place...</h2>
       <p class="text-white max-w-2xl text-lg mb-10">
         ...where you can belong to a school club, a gaming group, or a worldwide
@@ -88,7 +99,7 @@
         <p class="text-[#23272A] text-xl font-medium mb-5">Ready to start your journey?</p>
         <button class="bg-[#5865F2] text-white w-60 h-10 rounded-full space-x-1">
           <i class="fa-solid fa-download"></i>
-          <span> Download for Windows</span>   
+          <span> Download for Windows</span>
         </button>
       </div>
     </div>
@@ -174,4 +185,13 @@
     </div>
   </footer>
 </template>
+ 
+
+<script lang="ts" setup>
+import Toggle from '@vueform/toggle'
+import { ref } from 'vue';
+
+const toogle = ref(false)
+</script>
+
 

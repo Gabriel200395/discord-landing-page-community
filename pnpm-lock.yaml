@@ -11,6 +11,9 @@ dependencies:
   '@fortawesome/vue-fontawesome':
     specifier: ^3.0.6
     version: 3.0.6(@fortawesome/fontawesome-svg-core@6.5.1)(vue@3.4.18)
+  '@vueform/toggle':
+    specifier: ^2.1.4
+    version: 2.1.4
   vue:
     specifier: ^3.4.15
     version: 3.4.18(typescript@5.3.3)
@@ -621,6 +624,10 @@ packages:
 
   /@vue/shared@3.4.18:
     resolution: {integrity: sha512-CxouGFxxaW5r1WbrSmWwck3No58rApXgRSBxrqgnY1K+jk20F6DrXJkHdH9n4HVT+/B6G2CAn213Uq3npWiy8Q==}
+
+  /@vueform/toggle@2.1.4:
+    resolution: {integrity: sha512-tEITFf5wlqIWoCYZXJdoXvCnrc97weOu2csR/BEoROVvFu1zRsoK0wY1pJG7BR+g5zpGJneGSdLhMUsbx8y1yw==}
+    dev: false
 
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
