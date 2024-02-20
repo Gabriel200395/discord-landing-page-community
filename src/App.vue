@@ -76,7 +76,8 @@
     <div class="flex flex-col bg-[#F6F6F6] max-w-6xl justify-center items-center py-20 text-center">
       <div>
         <h3 class="text-[#23272A]  text-3xl font-medium mb-5">Reliable tech for staying close</h3>
-        <p class="text-sm max-w-2xl">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream
+        <p class="text-sm max-w-2xl">Low-latency voice and video feels like you’re in the same room. Wave hello over
+          video, watch friends stream
           their games, or gather up and have a drawing session with screen share.</p>
       </div>
 
@@ -88,5 +89,73 @@
       </div>
     </div>
   </section>
+
+  <footer class="bg-[#23272A] h-[450px] px-10 py-10">
+    <div class="w-full flex border-b border-[#5865F2]">
+      <div class="w-1/5">
+        <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4>
+      </div>
+
+      <div class="w-4/5  flex justify-between pt-2 pb-10">
+        <div>
+          <h5 class="text-[#5865F2] mb-2 text-base">Product</h5>
+          <ul>
+            <li class="text-sm text-white mb-2">Download</li>
+            <li class="text-sm text-white mb-2">Nitro</li>
+            <li class="text-sm text-white mb-2">Status</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-[#5865F2] text-lg mb-2">Company</h5>
+          <ul>
+            <li class="text-sm text-white mb-2">About</li>
+            <li class="text-sm text-white mb-2">Jobs</li>
+            <li class="text-sm text-white mb-2">Branding</li>
+            <li class="text-sm text-white mb-2">Newsroom</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-[#5865F2] text-lg mb-2">Product</h5>
+          <ul>
+            <li class="text-sm text-white mb-2">Download</li>
+            <li class="text-sm text-white mb-2">Nitro</li>
+            <li class="text-sm text-white mb-2">Status</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-[#5865F2] text-lg mb-2">Resources</h5>
+          <ul>
+            <li class="text-sm text-white mb-2">College</li>
+            <li class="text-sm text-white mb-2">Support</li>
+            <li class="text-sm text-white mb-2">Safety</li>
+            <li class="text-sm text-white mb-2">Blog</li>
+            <li class="text-sm text-white mb-2">Feedback</li>
+            <li class="text-sm text-white mb-2">Developers</li>
+            <li class="text-sm text-white mb-2">StreamKit</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-[#5865F2] text-lg mb-2">Policies</h5>
+          <ul>
+            <li class="text-sm text-white mb-2">Terms</li>
+            <li class="text-sm text-white mb-2">Privacy</li>
+            <li class="text-sm text-white mb-2">Cookie Settings</li>
+            <li class="text-sm text-white mb-2">Guidelines</li>
+            <li class="text-sm text-white mb-2">Acknowledgements</li>
+            <li class="text-sm text-white mb-2">Licenses</li>
+            <li class="text-sm text-white mb-2">Moderation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex py-10 justify-between w-full">
+      <img src="../src/assets/imgs/logo.svg" alt="logo" />
+
+      <button class="bg-[#5865F2] cursor-pointer text-white text-sm w-28 rounded-full">Open Discord</button>
+    </div>
+  </footer>
 </template>
 
