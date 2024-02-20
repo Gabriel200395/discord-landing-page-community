@@ -93,7 +93,20 @@
   <footer class="bg-[#23272A] h-[450px] px-10 py-10">
     <div class="w-full flex border-b border-[#5865F2]">
       <div class="w-1/5">
-        <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4>
+        <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4> 
+          
+        <div class="flex py-7 space-x-3"> 
+          <img src="../src/assets/imgs/us.svg" alt="us"/> 
+          <p class="text-white text-sm">English, USA</p>
+        </div>
+
+        <ul class="flex text-white space-x-3">
+          <li><i class="fa-brands fa-twitter cursor-pointer"></i></li> 
+          <li><i class="fa-brands fa-instagram cursor-pointer"></i></li> 
+          <li><i class="fa-brands fa-facebook cursor-pointer"></i></li>
+          <li><i class="fa-brands fa-youtube cursor-pointer"></i></li> 
+        </ul> 
+
       </div>
 
       <div class="w-4/5  flex justify-between pt-2 pb-10">
