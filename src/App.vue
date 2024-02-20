@@ -195,3 +195,10 @@ const toogle = ref(false)
 </script>
 
 
+<!-- 
+    [] - Implementar botão de tradutor 
+    [] - Implementar tradução pagina
+    [] - Implementar Dark Mode  
+    [] - Responsivo 
+    [] - Componentizar aplicação  
+ -->
