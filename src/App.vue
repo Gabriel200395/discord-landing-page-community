@@ -29,8 +29,9 @@
       </p>
 
       <div class="max-w-lg flex space-x-3">
-        <button class="bg-white w-60 rounded-full flex items-center justify-center h-10 text-sm">Download for
-          Windows</button>
+        <button class="bg-white w-60 rounded-full flex items-center justify-center h-10 text-sm space-x-2">
+          <i class="fa-solid fa-download"></i>
+          <span>Download for Windows</span></button>
         <button class="bg-[#23272A] w-60 rounded-full flex items-center justify-center h-10 text-white text-sm">Open
           Discord in your browser</button>
       </div>
@@ -85,7 +86,10 @@
 
       <div>
         <p class="text-[#23272A] text-xl font-medium mb-5">Ready to start your journey?</p>
-        <button class="bg-[#5865F2] text-white w-60 h-10 rounded-full">Download for Windows</button>
+        <button class="bg-[#5865F2] text-white w-60 h-10 rounded-full space-x-1">
+          <i class="fa-solid fa-download"></i>
+          <span> Download for Windows</span>   
+        </button>
       </div>
     </div>
   </section>
@@ -93,19 +97,19 @@
   <footer class="bg-[#23272A] h-[450px] px-10 py-10">
     <div class="w-full flex border-b border-[#5865F2]">
       <div class="w-1/5">
-        <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4> 
-          
-        <div class="flex py-7 space-x-3"> 
-          <img src="../src/assets/imgs/us.svg" alt="us"/> 
+        <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4>
+
+        <div class="flex py-7 space-x-3">
+          <img src="../src/assets/imgs/us.svg" alt="us" />
           <p class="text-white text-sm">English, USA</p>
         </div>
 
         <ul class="flex text-white space-x-3">
-          <li><i class="fa-brands fa-twitter cursor-pointer"></i></li> 
-          <li><i class="fa-brands fa-instagram cursor-pointer"></i></li> 
+          <li><i class="fa-brands fa-twitter cursor-pointer"></i></li>
+          <li><i class="fa-brands fa-instagram cursor-pointer"></i></li>
           <li><i class="fa-brands fa-facebook cursor-pointer"></i></li>
-          <li><i class="fa-brands fa-youtube cursor-pointer"></i></li> 
-        </ul> 
+          <li><i class="fa-brands fa-youtube cursor-pointer"></i></li>
+        </ul>
 
       </div>
 
@@ -166,7 +170,6 @@
 
     <div class="flex py-10 justify-between w-full">
       <img src="../src/assets/imgs/logo.svg" alt="logo" />
-
       <button class="bg-[#5865F2] cursor-pointer text-white text-sm w-28 rounded-full">Open Discord</button>
     </div>
   </footer>
