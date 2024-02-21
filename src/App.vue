@@ -110,10 +110,26 @@
       <div class="w-1/5">
         <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4>
 
-        <div class="flex py-7 space-x-3">
-          <img src="../src/assets/imgs/us.svg" alt="us" />
-          <p class="text-white text-sm">English, USA</p>
-        </div>
+        <!-- Aqui-->
+
+        <button class="flex py-3 space-x-3" @click="handleClickOpenedOptionsCountry">
+          <img v-bind:src="country.url" alt="us" class="h-4" />
+          <p class="text-white text-sm">{{ country.text }}</p>
+        </button>
+
+        <ul v-if="openedOptionsCountry" class="bg-slate-500 h-[70px] w-48 rounded absolute">
+          <li class="flex  space-x-3 px-2 py-2 cursor-pointer hover:bg-slate-400"
+            @click="() => handleClickSelectedCountry('English, USA', '../src/assets/imgs/us.svg')">
+            <img src="../src/assets/imgs/us.svg" alt="us" />
+            <p class="text-white text-sm">English, USA</p>
+          </li>
+          <li class="flex  space-x-3 px-2 py-2 cursor-pointer  hover:bg-slate-400"
+            @click="() => handleClickSelectedCountry('Brazil, BRA', '../src/assets/imgs/brazil.svg')">
+            <img src="../src/assets/imgs/brazil.svg" alt="us" class="h-4" />
+            <p class="text-white text-sm">Brazil, BRA</p>
+          </li>
+        </ul>
+
 
         <ul class="flex text-white space-x-3">
           <li><i class="fa-brands fa-twitter cursor-pointer"></i></li>
@@ -189,9 +205,23 @@
 
 <script lang="ts" setup>
 import Toggle from '@vueform/toggle'
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
 
-const toogle = ref(false)
+const toogle = ref(false);
+const openedOptionsCountry = ref(false);
+const country = reactive({
+  text: 'Brazil, BRA',
+  url: '../src/assets/imgs/brazil.svg'
+});
+
+
+const handleClickOpenedOptionsCountry = () => openedOptionsCountry.value = true;
+const handleClickSelectedCountry = (text: string, url: string) => {
+  openedOptionsCountry.value = false;
+  country.text = text
+  country.url = url
+}
+
 </script>
 
 
