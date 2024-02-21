@@ -218,7 +218,7 @@ const country = reactive({
 });
 
 
-const handleClickOpenedOptionsCountry = () => openedOptionsCountry.value = true;
+const handleClickOpenedOptionsCountry = () => openedOptionsCountry.value = !openedOptionsCountry.value;
 const handleClickSelectedCountry = (text: string, url: string) => {
   openedOptionsCountry.value = false;
   country.text = text
