@@ -49,17 +49,4 @@ watch(openedOptionsCountry, () => {
     }
   })
 })
-
 </script>
-
-
-<!-- 
-    [x] - Implementar botão de tradutor 
-    [] - Implementar tradução pagina
-    [] - Implementar Dark Mode  
-    [] - Responsivo 
-    [] - Dropmenu
-    [x] - Componentizar aplicação   
-    [x] - Ajustes Finos aplicação  
-
- -->

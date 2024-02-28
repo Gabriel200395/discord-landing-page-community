@@ -100,15 +100,8 @@
 </template> 
 
 
-<script lang="ts" setup>
-type FooterProps = {
-    handleClickOpenedOptionsCountry: () => void;
-    handleClickSelectedCountry: (text: string, url: string) => void;
-    openedOptionsCountry: boolean;
-    country: {
-        url: string;
-        text: string
-    }
-}
+<script lang="ts" setup> 
+import {FooterProps} from '../../types/footer.ts'
+
  defineProps<FooterProps>() 
 </script>
