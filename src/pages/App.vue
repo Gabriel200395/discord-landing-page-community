@@ -12,7 +12,7 @@
   :lang="lang" 
   :handleClickOpenedOptionsLang="handleClickOpenedOptionsLang"
   :handleClickSelectedLang="handleClickSelectedLang" 
-  :openedOptionsCountry="openedOptionsCountry" 
+  :openedOptionsLang="openedOptionsLang" 
   />
 </template>
  
@@ -29,16 +29,16 @@ import {
   Footer
 } from './components'
 
-const openedOptionsCountry = ref(false);
+const openedOptionsLang = ref(false);
 const lang = reactive({
   text: 'Brazil, BRA',
   url: '../src/assets/imgs/brazil.svg'
 });
 
 
-const handleClickOpenedOptionsLang = () => openedOptionsCountry.value = !openedOptionsCountry.value;
+const handleClickOpenedOptionsLang = () => openedOptionsLang.value = !openedOptionsLang.value;
 const handleClickSelectedLang = (text: string, url: string) => {
-  openedOptionsCountry.value = false;
+  openedOptionsLang.value = false;
   lang.text = text
   lang.url = url
 }

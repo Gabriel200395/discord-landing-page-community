@@ -11,7 +11,7 @@
                 </button>
 
 
-                <ul v-if="openedOptionsCountry" class="bg-slate-500 h-[70px] w-48 rounded absolute z-10">
+                <ul v-if="openedOptionsLang" class="bg-slate-500 h-[70px] w-48 rounded absolute z-10">
                     <li class="flex  space-x-3 px-2 py-2 cursor-pointer hover:bg-slate-400"
                         @click="() => handleClickSelectedLang('English, USA', '../src/assets/imgs/us.svg')" id="country">
                         <img src="../../../src/assets/imgs/us.svg" alt="us" class="h-4" />
