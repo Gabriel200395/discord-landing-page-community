@@ -33,8 +33,8 @@ import {
 } from './components'
 const openedOptionsLang = ref(false);
 const lang = reactive({
-  text: 'Brazil, BRA',
-  url: '../src/assets/imgs/brazil.svg', 
+  text: 'English, USA',
+  url: '../src/assets/imgs/us.svg', 
 });
 
 const {global} = i18n
@@ -46,6 +46,8 @@ const handleClickSelectedLang = (text: string, url: string, language: 'pt' | 'en
   lang.url = url,  
   global.locale = language
 } 
+
+console.log(global)
 
 
 

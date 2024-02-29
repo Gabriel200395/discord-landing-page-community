@@ -11,9 +11,6 @@ import App from './pages/App.vue'
 library.add(fas, far, fab) 
 dom.watch();
 
-console.log(i18n)
-
-
 const app = createApp(App)
 app.component("font-awesome-icon", FontAwesomeIcon)
 app.use(i18n)

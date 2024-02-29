@@ -3,12 +3,7 @@
         <img src="../../../src/assets/imgs/logo.svg" />
 
         <ul class="flex list-none space-x-10">
-            <li class="text-white text-base">Download</li>
-            <li class="text-white text-base">Nitro</li>
-            <li class="text-white text-base">Discover</li>
-            <li class="text-white text-base">Safety</li>
-            <li class="text-white text-base">Support</li>
-            <li class="text-white text-base">Blog</li>
+        <li class="text-white text-base" v-for="menu in $tm('menus')" :key="menu">{{ menu }}</li>
         </ul>
 
         <Toggle v-model="toogle" v-bind:classes="{
@@ -32,4 +27,5 @@
 import { ref } from 'vue'
 import Toggle from '@vueform/toggle'
 const toogle = ref(false);
+
 </script>
