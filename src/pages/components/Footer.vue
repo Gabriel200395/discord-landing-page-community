@@ -13,12 +13,12 @@
 
                 <ul v-if="openedOptionsLang" class="bg-slate-500 h-[70px] w-48 rounded absolute z-10">
                     <li class="flex  space-x-3 px-2 py-2 cursor-pointer hover:bg-slate-400"
-                        @click="() => handleClickSelectedLang('English, USA', '../src/assets/imgs/us.svg')" id="country">
+                        @click="() => handleClickSelectedLang('English, USA', '../src/assets/imgs/us.svg', 'en')" id="country">
                         <img src="../../../src/assets/imgs/us.svg" alt="us" class="h-4" />
                         <p class="text-white text-sm">English, USA</p>
                     </li>
                     <li class="flex  space-x-3 px-2 py-2 cursor-pointer  hover:bg-slate-400"
-                        @click="() => handleClickSelectedLang('Brazil, BRA', '../src/assets/imgs/brazil.svg')"
+                        @click="() => handleClickSelectedLang('Brazil, BRA', '../src/assets/imgs/brazil.svg', 'pt')"
                         id="country">
                         <img src="../../../src/assets/imgs/brazil.svg" alt="us" class="h-4" />
                         <p class="text-white text-sm">Brazil, BRA</p>

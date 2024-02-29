@@ -18,7 +18,10 @@
  
 
 <script lang="ts" setup>
-import { ref, reactive } from 'vue'; 
+import { ref, reactive } from 'vue';  
+import i18n from '../lang'
+
+
 import {
   Navbar,
   Information,
@@ -28,30 +31,23 @@ import {
   ReliableTech,
   Footer
 } from './components'
-
-
-
 const openedOptionsLang = ref(false);
 const lang = reactive({
   text: 'Brazil, BRA',
   url: '../src/assets/imgs/brazil.svg', 
-  language: 'EN'
 });
 
+const {global} = i18n
 
 const handleClickOpenedOptionsLang = () => openedOptionsLang.value = !openedOptionsLang.value;
-const handleClickSelectedLang = (text: string, url: string, language: string) => {
+const handleClickSelectedLang = (text: string, url: string, language: 'pt' | 'en') => {
   openedOptionsLang.value = false;
   lang.text = text
-  lang.url = url, 
-  lang.language = language  
+  lang.url = url,  
+  global.locale = language
 } 
 
 
 
 
 </script> 
-
-
-
-../langs/languages

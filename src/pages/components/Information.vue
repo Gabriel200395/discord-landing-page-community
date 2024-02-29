@@ -1,6 +1,6 @@
 <template>
     <div class="text-center items-center flex w-full justify-center flex-col mt-20 ring-none h-">
-      <h2 class="text-white text-5xl uppercase mb-10">Imagine a place...</h2>
+      <h2 class="text-white text-5xl uppercase mb-10">{{ $t('information.title') }}</h2>
       <p class="text-white max-w-2xl text-lg mb-10">
         ...where you can belong to a school club, a gaming group, or a worldwide
         art community. Where just you and a handful of friends can spend time together.
