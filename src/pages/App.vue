@@ -14,7 +14,7 @@
  
 
 <script lang="ts" setup>
-import { ref, reactive, watch } from 'vue';
+import { ref, reactive } from 'vue';
 import {
   Navbar,
   Information,
@@ -38,15 +38,6 @@ const handleClickSelectedCountry = (text: string, url: string) => {
   country.text = text
   country.url = url
 }
-
-
-watch(openedOptionsCountry, () => {
-  window.document.addEventListener('click', (event: any) => {
-    if (openedOptionsCountry.value && !Boolean(event.target.id)) {
-      openedOptionsCountry.value = false
-    }
-  })
-})
 
 </script> 
 
