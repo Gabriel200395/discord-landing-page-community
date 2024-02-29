@@ -1,8 +1,8 @@
 export  type FooterProps = {
-    handleClickOpenedOptionsCountry: () => void;
-    handleClickSelectedCountry: (text: string, url: string) => void;
+    handleClickOpenedOptionsLang: () => void;
+    handleClickSelectedLang: (text: string, url: string) => void;
     openedOptionsCountry: boolean;
-    country: {
+    lang: {
         url: string;
         text: string
     }

@@ -5,20 +5,20 @@
                 <h4 class="text-[#5865F2] uppercase text-2xl w-32">Imagine a place</h4>
 
                 <button class="flex items-center py-3 px-2  text-white text-sm w-48"
-                    @click="handleClickOpenedOptionsCountry" id="country">
-                    <img v-bind:src="country.url" alt="us" class="h-4 mr-3" />
-                    {{ country.text }}
+                    @click="handleClickOpenedOptionsLang" id="country">
+                    <img v-bind:src="lang.url" alt="us" class="h-4 mr-3" />
+                    {{ lang.text }}
                 </button>
 
 
                 <ul v-if="openedOptionsCountry" class="bg-slate-500 h-[70px] w-48 rounded absolute z-10">
                     <li class="flex  space-x-3 px-2 py-2 cursor-pointer hover:bg-slate-400"
-                        @click="() => handleClickSelectedCountry('English, USA', '../src/assets/imgs/us.svg')" id="country">
+                        @click="() => handleClickSelectedLang('English, USA', '../src/assets/imgs/us.svg')" id="country">
                         <img src="../../../src/assets/imgs/us.svg" alt="us" class="h-4" />
                         <p class="text-white text-sm">English, USA</p>
                     </li>
                     <li class="flex  space-x-3 px-2 py-2 cursor-pointer  hover:bg-slate-400"
-                        @click="() => handleClickSelectedCountry('Brazil, BRA', '../src/assets/imgs/brazil.svg')"
+                        @click="() => handleClickSelectedLang('Brazil, BRA', '../src/assets/imgs/brazil.svg')"
                         id="country">
                         <img src="../../../src/assets/imgs/brazil.svg" alt="us" class="h-4" />
                         <p class="text-white text-sm">Brazil, BRA</p>

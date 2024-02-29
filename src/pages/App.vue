@@ -8,8 +8,12 @@
   <VoiceConnected />
   <FromToFandom />
   <ReliableTech />
-  <Footer :country="country" :handleClickSelectedCountry="handleClickSelectedCountry"
-    :handleClickOpenedOptionsCountry="handleClickOpenedOptionsCountry" :openedOptionsCountry="openedOptionsCountry" />
+  <Footer 
+  :lang="lang" 
+  :handleClickOpenedOptionsLang="handleClickOpenedOptionsLang"
+  :handleClickSelectedLang="handleClickSelectedLang" 
+  :openedOptionsCountry="openedOptionsCountry" 
+  />
 </template>
  
 
@@ -26,17 +30,17 @@ import {
 } from './components'
 
 const openedOptionsCountry = ref(false);
-const country = reactive({
+const lang = reactive({
   text: 'Brazil, BRA',
   url: '../src/assets/imgs/brazil.svg'
 });
 
 
-const handleClickOpenedOptionsCountry = () => openedOptionsCountry.value = !openedOptionsCountry.value;
-const handleClickSelectedCountry = (text: string, url: string) => {
+const handleClickOpenedOptionsLang = () => openedOptionsCountry.value = !openedOptionsCountry.value;
+const handleClickSelectedLang = (text: string, url: string) => {
   openedOptionsCountry.value = false;
-  country.text = text
-  country.url = url
+  lang.text = text
+  lang.url = url
 }
 
 </script> 
