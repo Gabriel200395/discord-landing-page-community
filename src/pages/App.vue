@@ -18,7 +18,7 @@
  
 
 <script lang="ts" setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive } from 'vue'; 
 import {
   Navbar,
   Information,
@@ -29,21 +29,29 @@ import {
   Footer
 } from './components'
 
+
+
 const openedOptionsLang = ref(false);
 const lang = reactive({
   text: 'Brazil, BRA',
-  url: '../src/assets/imgs/brazil.svg'
+  url: '../src/assets/imgs/brazil.svg', 
+  language: 'EN'
 });
 
 
 const handleClickOpenedOptionsLang = () => openedOptionsLang.value = !openedOptionsLang.value;
-const handleClickSelectedLang = (text: string, url: string) => {
+const handleClickSelectedLang = (text: string, url: string, language: string) => {
   openedOptionsLang.value = false;
   lang.text = text
-  lang.url = url
-}
+  lang.url = url, 
+  lang.language = language  
+} 
+
+
+
 
 </script> 
 
 
 
+../langs/languages
