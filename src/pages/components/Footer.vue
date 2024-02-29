@@ -56,14 +56,7 @@
                         <li class="text-sm text-white mb-2">Newsroom</li>
                     </ul>
                 </div>
-                <div>
-                    <h5 class="text-[#5865F2] text-lg mb-2">Product</h5>
-                    <ul>
-                        <li class="text-sm text-white mb-2">Download</li>
-                        <li class="text-sm text-white mb-2">Nitro</li>
-                        <li class="text-sm text-white mb-2">Status</li>
-                    </ul>
-                </div>
+                
                 <div>
                     <h5 class="text-[#5865F2] text-lg mb-2">Resources</h5>
                     <ul>
