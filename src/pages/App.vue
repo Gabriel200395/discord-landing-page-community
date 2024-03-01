@@ -47,7 +47,6 @@ const handleClickSelectedLang = (text: string, url: string, language: 'pt' | 'en
   global.locale = language
 } 
 
-console.log(global)
 
 
 
