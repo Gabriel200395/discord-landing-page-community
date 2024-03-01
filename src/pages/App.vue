@@ -44,7 +44,9 @@ const handleClickSelectedLang = (text: string, url: string, language: 'pt' | 'en
   openedOptionsLang.value = false;
   lang.text = text
   lang.url = url,  
-  global.locale = language
+  global.locale = language 
+
+  window.scroll(0, 0)
 } 
 
 
