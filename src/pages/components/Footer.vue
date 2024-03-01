@@ -2,7 +2,7 @@
     <footer class="bg-[#23272A] h-[450px] px-10 py-10">
         <div class="w-full flex border-b border-[#5865F2]">
             <div class="w-1/5">
-                <h4 class="text-[#5865F2] uppercase text-2xl w-32">{{ $t('information.title') }}</h4>
+                <h4 class="text-[#5865F2] uppercase text-xl w-32">{{ $t('information.title') }}</h4>
 
                 <button class="flex items-center py-3 px-2  text-white text-sm w-48" @click="handleClickOpenedOptionsLang"
                     id="country">
